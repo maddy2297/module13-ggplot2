@@ -7,18 +7,17 @@ head(housing[1:5])
 library(ggplot2)
 
 # Create a Histogram of the Home.Value column with the housing data. 
-
+ggplot(data = housing) +
+  geom_bar(mapping = aes(x = hwy, fill=class))
 
 # Create a plot that focus on MA and TX with the x-axis the Date and the y-axis Home.Value
-
-
-housing.2001 <- subset(housing, Date == 2001.25) 
+housing.2001 <- subset(housing, x-axis = "date", y-axis = "home.value") 
 
 # Create a scatter plot that's x-axis is Land.Value and y-axis is Structure.Cost
-
+geom_point = subset(housing, Date == 2001.25)
 
 # Now pass in the Land.Value in log form for the same graph 
-
+Land.Value <- log(housing, Date == 2001.25)
 
 # Why would you want to log() one of the axis.  Look at the two different graphs to help you answer. 
 
